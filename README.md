@@ -1,9 +1,11 @@
-This repo hosts the official MediaPipe samples with a goal of showing the fundamental steps involved to create apps with our machine learning platform. 
+Forked from MediaPipe: https://github.com/googlesamples/mediapipe/tree/main/examples/pose_landmarker/android
 
-External PRs for fixes are welcome, however new sample/demo PRs will likely be rejected to maintain the simplicity of this repo for ongoing maintenance. It is strongly recommended that contributors who are interested in submitting more complex samples or demos host their samples in their own public repos and create written tutorials to share with the community. Contributors can also submit these projects and tutorials to the [Google DevLibrary](https://devlibrary.withgoogle.com/)
+This is a tech test for Magic.
 
+I have implemented logic for recording and recognizing poses via MediaPipe. 
 
-MediaPipe Solutions streamlines on-device ML development and deployment with flexible low-code / no-code tools that provide the modular building blocks for creating custom high-performance solutions for cross-platform deployment. It consists of the following components:
-* MediaPipe Tasks (low-code): create and deploy custom e2e ML solution pipelines
-* MediaPipe Model Maker (low-code): create custom ML models from advanced solutions
-* MediaPipe Studio (no-code): create, evaluate, debug, benchmark, prototype, deploy advanced production-level solutions
+The user can record a base pose, then a right and left pose. The app will then keep count of reps for both exercises seperately.
+
+Please go to here for my specific changes: https://github.com/CharlieSmart157/mediapipe/tree/main/examples/pose_landmarker/android/app/src/main/java/com/google/mediapipe/examples/poselandmarker
+
+MainViewModel.kt houses the logic for recording and detecting poses. 
