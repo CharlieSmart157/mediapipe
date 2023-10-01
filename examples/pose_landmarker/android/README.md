@@ -1,4 +1,4 @@
-# MediaPipe Tasks Pose Landmark Detection Android Demo
+ # MediaPipe Tasks Pose Landmark Detection Android Demo
 
 ### Overview
 

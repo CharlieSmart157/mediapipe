@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
     ~ Copyright 2023 The TensorFlow Authors. All Rights Reserved.
     ~
     ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +30,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <include
-        android:id="@+id/bottom_sheet_layout"
-        layout="@layout/info_bottom_sheet" />
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capture_label"
+        android:translationY="100dp" />
+
+    <TextView
+        android:id="@+id/repsLabelFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_left_reps"
+        app:layout_anchor="@id/repsLabelSecond"
+        app:layout_anchorGravity="top"
+        android:layout_marginBottom="200dp"
+        android:background="@color/bottom_sheet_background"/>
+
+    <TextView
+        android:id="@+id/repCountFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        app:layout_anchor="@id/repsLabelFirst"
+        app:layout_anchorGravity="center_vertical|end"
+        android:background="@color/bottom_sheet_background"/>
+
+    <TextView
+        android:id="@+id/repsLabelSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_right_reps"
+        app:layout_anchor="@id/progress_bar"
+        app:layout_anchorGravity="top"
+        android:layout_marginBottom="150dp"
+        android:background="@color/bottom_sheet_background"/>
+
+    <TextView
+        android:id="@+id/repCountSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        app:layout_anchor="@id/repsLabelSecond"
+        app:layout_anchorGravity="center_vertical|end"
+        android:background="@color/bottom_sheet_background"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_gravity="bottom"
+        android:paddingBottom="100dp"/>
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
